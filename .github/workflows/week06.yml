@@ -38,6 +38,6 @@ jobs:
       - name: Lab file not found
         if: steps.check_file.outputs.exists == 'false'
         run: |
-          echo "⚠️ week06/lab06.py not found"
-          echo "Create this file to enable automated testing"
-          exit 0
+          echo "❌ week06/lab06.py not found"
+          echo "Create this file to start the lab"
+          exit 1

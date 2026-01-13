@@ -64,7 +64,7 @@ def test_guessing_game_correct_guess():
 
                 # Check that success message was printed (in some form)
                 output_text = ' '.join(print_calls).lower()
-                assert 'correct' in output_text or 'right' in output_text or 'won' in output_text or 'yes' in output_text, \
+                assert 'correct' in output_text or 'right' in output_text or 'won' in output_text or 'yes' in output_text or 'congratulations' in output_text, \
                     "Function should indicate correct guess"
 
 def test_guessing_game_multiple_guesses():

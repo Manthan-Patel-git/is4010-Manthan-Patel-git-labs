@@ -40,6 +40,6 @@ jobs:
       - name: Rust project not found
         if: steps.check_rust.outputs.exists == 'false'
         run: |
-          echo "⚠️ week11/src/main.rs not found or empty"
-          echo "Create/update this file to enable automated testing"
-          exit 0
+          echo "❌ week11/src/main.rs not found or empty"
+          echo "Create/update this file to start the lab"
+          exit 1
