@@ -250,6 +250,11 @@ You should see folders: `week01/`, `lab02/`, `lab03/`, etc.
 
 Virtual environments keep your project dependencies isolated and prevent conflicts.
 
+**Note on `python` vs `python3` and `pip` vs `pip3`:**
+- **Before creating venv**: Use `python3` on macOS/Linux (Windows typically uses `python`)
+- **After activating venv**: Use `python` and `pip` (they work the same on all platforms)
+- **If a command doesn't work**: Try the `3` version (`python3` or `pip3`)
+
 ```bash
 # Make sure you're in your labs repository root
 cd ~/is4010/is4010-YOUR-USERNAME-labs
